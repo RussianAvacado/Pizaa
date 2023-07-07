@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="RU">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="h-one">Russian Eureka Pizza</h1>
+            <img class="one-img"src="Rectangle 3.png">
+        </header>
+        <main>
+            <div class="con-1 con">
+                <img class="img-1" src="Rectangle 6.png">
+                <p class="p-1">Пеперони ДеЛюкс 1000р.</p>
+            </div>
+            <div class="con-2 con">
+                <img class="img-1" src="Rectangle 7.png">
+                <p class="p-1">Маргарита 1000р.</p>
+            </div>
+            <div class="con-3 con">
+                <img class="img-1" src="Rectangle 8.png">
+                <p class="p-1">Барбекю 700р.</p>
+            </div>
+            <div class="con-4 con">
+                <img class="img-1" src="Rectangle 9.png">
+                <p class="p-1">4 сыра 6666р.</p>
+            </div>
+            <div class="con-5 con">
+                <img class="img-1" src="Rectangle 10.png">
+                <p class="p-1">Мясная 2000р.</p>
+            </div>
+        </main>
+        
+    </body>
+    <footer>
+        
+    </footer>
+    <script>let block1 = document.querySelectorAll('.con')
+        document.addEventListener('mousemove', function(e) {
+            let dx = e.pageX - window.innerWidth / 2
+            let dy = e.pageY - window.innerHeight / 2
+            let angleX = 20 * dx / window.innerWidth / 2
+            let angleY = 20 * dy / window.innerHeight / 2
+            for(let i = 0; i<5; i++)
+            block1[i].style.transform = `rotateX(${-angleY}deg) rotateY(${angleX}deg)`
+        })</script>
+</html>
